@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maharashtra Digital Seva Portal</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+background:#f2f5fa;
+color:#172554;
+}
+header{
+background:linear-gradient(120deg,#092b64,#1266b5);
+color:white;
+padding:25px 5%;
+text-align:center;
+}
+header h1{font-size:30px;margin-bottom:10px}
+header p{font-size:15px}
+nav{
+background:#fff;
+padding:15px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+box-shadow:0 3px 12px #0001;
+}
+nav a{
+text-decoration:none;
+color:#123b72;
+font-weight:bold;
+}
+.hero{
+margin:25px auto;
+max-width:1100px;
+padding:35px 20px;
+text-align:center;
+background:linear-gradient(120deg,#0d47a1,#2196f3);
+color:white;
+border-radius:18px;
+box-shadow:0 10px 25px #1235;
+}
+.hero h2{font-size:28px;margin-bottom:12px}
+.search{
+width:90%;
+max-width:550px;
+padding:15px;
+border:none;
+border-radius:10px;
+margin-top:20px;
+font-size:16px;
+}
+.container{
+max-width:1150px;
+margin:auto;
+padding:15px;
+}
+.title{
+font-size:23px;
+margin:30px 0 18px;
+border-left:5px solid #f59e0b;
+padding-left:12px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+.card{
+background:white;
+padding:22px;
+border-radius:15px;
+box-shadow:0 5px 18px #0001;
+transition:.3s;
+border:1px solid #e5eaf3;
+}
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px #0002;
+}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:13px;color:#64748b;margin-bottom:15px}
+.btn{
+display:inline-block;
+background:#1256a5;
+color:white;
+padding:10px 17px;
+border-radius:8px;
+text-decoration:none;
+font-size:13px;
+font-weight:bold;
+}
+.btn:hover{background:#f59e0b}
+.notice{
+background:#fff7df;
+padding:18px;
+border-radius:12px;
+margin:25px 0;
+font-size:14px;
+line-height:1.7;
+}
+footer{
+background:#092b64;
+color:white;
+text-align:center;
+padding:30px 15px;
+margin-top:40px;
+line-height:2;
+}
+.no-result{
+display:none;
+text-align:center;
+padding:25px;
+}
+@media(max-width:600px){
+header h1{font-size:23px}
+.hero h2{font-size:22px}
+nav{gap:12px;font-size:13px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{padding:14px}
+.card h3{font-size:15px}
+.card p{font-size:12px}
+.btn{padding:9px 10px;font-size:12px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🇮🇳 Maharashtra Digital Seva</h1>
+<p>महाराष्ट्रातील सर्व शासकीय योजना व ऑनलाइन सेवा</p>
+<p>सरकारी सेवा | सरकारी कार्ड | शेतकरी सेवा</p>
+</header>
+
+<nav>
+<a href="#home">मुख्यपृष्ठ</a>
+<a href="#cards">सरकारी कार्ड</a>
+<a href="#schemes">योजना</a>
+<a href="#district">E-District</a>
+<a href="#ekyc">e-KYC</a>
+<a href="#farmer">शेतकरी सेवा</a>
+</nav>
+
+<section class="hero" id="home">
+<h2>सर्व सरकारी सेवा आता एकाच ठिकाणी!</h2>
+<p>महाराष्ट्रातील नागरिकांसाठी डिजिटल सेवा पोर्टल</p>
+<input class="search" type="search"
+id="searchBox"
+placeholder="सेवा शोधा... Search Services">
+</section>
+
+<div class="container">
+
+<div class="notice">
+<strong>महत्त्वाची सूचना:</strong>
+या पोर्टलवर सरकारी योजनांची माहिती आणि अधिकृत
+वेबसाइटच्या लिंक दिल्या आहेत.
+अर्ज व e-KYC अधिकृत सरकारी पोर्टलवरच करा.
+</div>
+
+<h2 class="title" id="cards">🪪 सरकारी कार्ड सेवा</h2>
+<div class="grid">
+
+<div class="card">
+<div class="icon">🏥</div>
+<h3>Ayushman Card</h3>
+<p>आयुष्मान भारत कार्ड सेवा</p>
+<a class="btn" href="https://beneficiary.nha.gov.in/" target="_blank">Apply / Check</a>
+</div>
+
+<div class="card">
+<div class="icon">👨‍🌾</div>
+<h3>Farmer ID</h3>
+<p>शेतकरी ओळखपत्र सेवा</p>
+<a class="btn" href="https://mhfr.agristack.gov.in/" target="_blank">Open Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">💳</div>
+<h3>PAN Card</h3>
+<p>पॅन कार्ड संबंधित सेवा</p>
+<a class="btn" href="https://www.incometax.gov.in/" target="_blank">Open Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">👷</div>
+<h3>E-Shram Card</h3>
+<p>ई-श्रम कार्ड सेवा</p>
+<a class="btn" href="https://eshram.gov.in/" target="_blank">Apply Online</a>
+</div>
+
+<div class="card">
+<div class="icon">🏥</div>
+<h3>ABHA Health Card</h3>
+<p>आरोग्य ओळखपत्र</p>
+<a class="btn" href="https://abha.abdm.gov.in/" target="_blank">Open Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">🗳️</div>
+<h3>Voter ID</h3>
+<p>मतदार ओळखपत्र</p>
+<a class="btn" href="https://voters.eci.gov.in/" target="_blank">Open Portal</a>
+</div>
+
+</div>
+
+<h2 class="title" id="schemes">📋 महाराष्ट्र सरकारी योजना</h2>
+<div class="grid">
+
+<div class="card">
+<div class="icon">👩</div>
+<h3>मुख्यमंत्री माझी लाडकी बहीण</h3>
+<p>योजनेची माहिती व अर्ज</p>
+<a class="btn" href="https://ladakibahin.maharashtra.gov.in/" target="_blank">Visit Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">🌾</div>
+<h3>PM Kisan Yojana</h3>
+<p>शेतकरी सन्मान निधी</p>
+<a class="btn" href="https://pmkisan.gov.in/" target="_blank">Visit Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">🌱</div>
+<h3>नमो शेतकरी योजना</h3>
+<p>नमो शेतकरी महासन्मान निधी</p>
+<a class="btn" href="https://nsmny.mahait.org/" target="_blank">Visit Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">🏠</div>
+<h3>प्रधानमंत्री आवास योजना</h3>
+<p>घरकुल योजनेची माहिती</p>
+<a class="btn" href="https://pmayg.nic.in/" target="_blank">Visit Portal</a>
+</div>
+
+<div class="card">
+<div class="icon">👵</div>
+<h3>संजय गांधी निराधार योजना</h3>
+<p>निराधार पेन्शन योजना</p>
+<a class="btn" href="https://sjsa.maharashtra.gov.in/" target="_blank">Information</a>
+</div>
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>महा DBT</h3>
+<p>शिष्यवृत्ती व शासकीय अनुदान</p>
+<a class="btn" href="https://mahadbt.maharashtra.gov.in/" target="_blank">Visit Portal</a>
+</div>
+
+</div>
+
+<h2 class="title" id="district">📄 E-District Services</h2>
+<div class="grid">
+
+<div class="card">
+<div class="icon">📃</div>
+<h3>उत्पन्न प्रमाणपत्र</h3>
+<p>Income Certificate</p>
+<a class="btn" href="https://aaplesarkar.mahaonline.gov.in/" target="_blank">Apply Online</a>
+</div>
+
+<div class="card">
+<div
